@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Scorekeeper</string>
+    <string name="team1increase">Team1Increase</string>
+    <string name="team1decrease">Team1Decrease</string>
+</resources>

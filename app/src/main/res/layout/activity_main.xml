@@ -13,25 +13,29 @@
         android:layout_weight="1">
 
         <ImageView
-            android:id="@+id/Team1Increase"
+            android:id="@+id/Team1Decrease"
             android:layout_width="84dp"
             android:layout_height="82dp"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
             android:layout_marginStart="28dp"
-            android:contentDescription="@string/team1increase"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:src="@drawable/ic_minus"
+            android:contentDescription="@string/minus_button"
+            />
 
         <ImageView
-            android:id="@+id/Team1Decrease"
+            android:id="@+id/Team1Increase"
             android:layout_width="84dp"
             android:layout_height="82dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginStart="275dp"
-            android:layout_margin="28dp"
-            android:contentDescription="@string/team1decrease"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="28dp"
+            android:src="@drawable/ic_plus"
+            android:contentDescription="@string/plus_button"
+ />
 
         <TextView
             android:id="@+id/Team1Score"
@@ -39,16 +43,16 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:text="0" />
+            android:text="@string/score" />
 
         <TextView
             android:id="@+id/Team1Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/Team1Score"
-            android:layout_marginTop="-159dp"
             android:layout_centerHorizontal="true"
-            android:text="Team 1" />
+            android:layout_marginTop="-150dp"
+            android:text="@string/team_1" />
 
     </RelativeLayout>
 
@@ -59,25 +63,29 @@
         android:layout_weight="1">
 
         <ImageView
-            android:id="@+id/Team2Increase"
+            android:id="@+id/Team2Decrease"
             android:layout_width="84dp"
             android:layout_height="82dp"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
             android:layout_marginStart="28dp"
-            android:contentDescription="@string/team1increase"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:src="@drawable/ic_minus"
+            android:contentDescription="@string/minus_button"
+            />
 
         <ImageView
-            android:id="@+id/Team2Decrease"
+            android:id="@+id/Team2Increase"
             android:layout_width="84dp"
             android:layout_height="82dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginStart="275dp"
-            android:layout_margin="28dp"
-            android:contentDescription="@string/team1decrease"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="28dp"
+            android:src="@drawable/ic_plus"
+            android:contentDescription="@string/plus_button"
+/>
 
         <TextView
             android:id="@+id/Team2Score"
@@ -85,7 +93,8 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:text="0" />
+            android:text="@string/score" />
+/>
 
         <TextView
             android:id="@+id/Team2Text"
@@ -94,7 +103,7 @@
             android:layout_below="@id/Team2Score"
             android:layout_marginTop="-159dp"
             android:layout_centerHorizontal="true"
-            android:text="Team 2" />
+            android:text="@string/team_2" />
 
     </RelativeLayout>
 

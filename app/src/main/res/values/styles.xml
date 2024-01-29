@@ -1,6 +1,6 @@
 <resources>
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight">
     </style>
     <style name="ScoreButtons" parent="Widget.AppCompat.Button">
         <item name="android:background">@drawable/button_background</item>

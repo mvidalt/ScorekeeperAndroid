@@ -24,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
 
     ImageView imageTeam1Increase;
 
+    // Added constants for saving instance state
+    private static final String STATE_SCORE_TEAM_1 = "state_score_team_1";
+    private static final String STATE_SCORE_TEAM_2 = "state_score_team_2";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,6 +63,18 @@ public class MainActivity extends AppCompatActivity {
                 decreaseScore(v);
             }
         });
+
+
+        if (savedInstanceState != null) {
+            // Retrieve the saved scores
+            scoreTeam1Value = savedInstanceState.getInt(STATE_SCORE_TEAM_1);
+            scoreTeam2Value = savedInstanceState.getInt(STATE_SCORE_TEAM_2);
+
+            // Update the TextViews with the saved scores
+            scoreTeam1Text.setText(String.valueOf(scoreTeam1Value));
+            scoreTeam2Text.setText(String.valueOf(scoreTeam2Value));
+        }
+
     }
 
     public void increaseScore(View view) {
@@ -73,9 +89,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void decreaseScore(View view) {
-
-            // Checking which button is clicked
-
             if (scoreTeam1Value > 0 && view.getId() == R.id.Team1Decrease) {
                 scoreTeam1Value--;
                 scoreTeam1Text.setText(String.valueOf(scoreTeam1Value));
@@ -112,4 +125,17 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        // Save the scores in the instance state
+        outState.putInt(STATE_SCORE_TEAM_1, scoreTeam1Value);
+        outState.putInt(STATE_SCORE_TEAM_2, scoreTeam2Value);
+        super.onSaveInstanceState(outState);
+    }
+
+
+
 }

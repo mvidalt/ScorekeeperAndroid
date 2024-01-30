@@ -21,8 +21,7 @@
             android:layout_marginStart="28dp"
             android:src="@drawable/ic_minus"
             android:contentDescription="@string/minus_button"
-            android:background="@drawable/button_background"
-            style="@style/MinusButtons"
+            android:background="@drawable/button_background_selector" style="@style/MinusButtons"
 
             />
 
@@ -38,7 +37,7 @@
             android:layout_marginBottom="28dp"
             android:src="@drawable/ic_plus"
             android:contentDescription="@string/plus_button"
-            android:background="@drawable/button_background"
+            android:background="@drawable/button_background_selector"
             style="@style/PlusButtons"
  />
 
@@ -75,7 +74,7 @@
             android:layout_marginStart="28dp"
             android:src="@drawable/ic_minus"
             android:contentDescription="@string/minus_button"
-            android:background="@drawable/button_background"
+            android:background="@drawable/button_background_selector"
             style="@style/MinusButtons"
             />
 
@@ -91,7 +90,7 @@
             android:layout_marginBottom="28dp"
             android:src="@drawable/ic_plus"
             android:contentDescription="@string/plus_button"
-            android:background="@drawable/button_background"
+            android:background="@drawable/button_background_selector"
             style="@style/PlusButtons"
 />
 

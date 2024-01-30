@@ -2,5 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="colorPrimary">#F0000000</color>
+    <color name="colorPrimary">#FF000000</color>
+    <color name="pressedColor">#008080</color>
+    <color name="defaultColor">#006666</color>
+    <color name="borderColor">#004d4d</color>
 </resources>
